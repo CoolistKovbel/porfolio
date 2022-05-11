@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: 2px;
+}
+
+h4 {
+  font-size: 16px;
+  padding: 6px;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+body{
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+main{
+  padding: 25px;
+}
+
+div{
+  margin-bottom: 10px;
+}
+
+div h2{
+  font-size: 2rem;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+
+li{
+  width: 310px;
+  height: auto;
+  display: inline-block;
+  margin-top: 10px;
+  border: 1px solid rgb(226, 225, 222);
+  background: rgb(49, 45, 45);
+}
+
+.main-header{
+  padding: 25px;
+  margin: 0 auto;
+  max-width: 1250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-container {
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.header-content {
+  text-align: center;
+}
+
+.header-content h2{
+  font-size: 2.4rem;
+}
+
+.header-content h3 {
+  font-size: 1.4rem;
+  margin: 6px 0;
+}
+
+.btn{
+  display: inline-block;
+  margin-top:5px;
+  padding: 10px 12px;
+  border: 2px solid white;
+  animation: blinking 1.5s infinite;
+}
+
+.container{
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.about-me, 
+.my-projects,
+.contact{
+  width: 100%;
+  padding: 10px;
+}
+
+.my-projects {
+  height: auto;
+  border: 1px solid white;
+}
+
+.strip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.social-contact,
+.email-contact {
+  width: 500px;
+  padding: 5px;
+}
+
+.btn-group{
+  padding: 5px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-group > a {
+  display: inline-block;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-group > a:hover{
+  background-color: yellow;
+}
+
+@media (max-width: 810px) {
+  ul {
+    flex-direction: column;
+    flex-wrap:nowrap;
+  }
+  li{
+    margin: 5px 0;
+    width: 400px;
+  }
+  p{
+    font-size: .9rem;
+  }
+  .main-header{
+    flex-direction: column;
+  }
+  .my-projects {
+    height: auto;
+  }
+  .img-container {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 810px) {
+  li{
+    width: 300px;
+  }
+  .img-container {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* KeyFrames */
+@keyframes blinking {
+  0% {
+    color: aliceblue
+  }
+  25%{
+    color: rgb(167, 207, 241);
+  }
+  50%{
+    color: rgb(85, 172, 248);
+  }
+  100%{
+    color: rgb(167, 207, 241);
+  }
+}
